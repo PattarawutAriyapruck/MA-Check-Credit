@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding: 20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.content-box {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* ทำให้เส้นขอบของเซลล์ติดต่อกัน */
+    margin-top: 20px; /* เว้นระยะจากด้านบน */
+}
+
+th, td {
+    border: 1px solid #ddd; /* เส้นขอบเซลล์ */
+    padding: 8px; /* ระยะห่างภายในเซลล์ */
+    text-align: left; /* จัดข้อความไปทางซ้าย */
+}
+
+th {
+    background-color: #f2f2f2; /* สีพื้นหลังของหัวข้อ */
+    font-weight: bold; /* ทำให้ตัวอักษรหนา */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* สีพื้นหลังของแถวคู่ */
+}
+
+tr:hover {
+    background-color: #ddd; /* สีพื้นหลังเมื่อเลื่อนเมาส์ */
+}
+
+.big-button {
+    font-size: 24px; /* ขนาดฟอนต์ใหญ่ */
+    padding: 15px 30px; /* เพิ่มพื้นที่ภายในปุ่ม */
+    background-color: #4CAF50; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 10px; /* มุมมน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นรูปมือเมื่อ hover */
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนสี */
+}
+
+/* เมื่อ hover ที่ปุ่ม */
+.big-button:hover {
+    background-color: #45a049; /* สีพื้นหลังเมื่อ hover */
+}
